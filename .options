@@ -1,0 +1,19 @@
+##########################################
+###### IOTA Seed Generator Options #######
+##########################################
+List of commands:
+-h          Help
+-e          Exempt Seed from history file
+
+##########################################
+To change the length of the seed include
+the desired length after generate.py
+
+Ex: python generate.py 45
+
+To change the length of the seed and keep
+the seed from writing the history include
+the -e command after the length value
+
+Ex: python generate.py 45 -e
+#########################################
