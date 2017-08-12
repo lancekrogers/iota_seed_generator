@@ -1,6 +1,8 @@
 import random
 from sys import argv
 import datetime
+import secrets
+
 
 now = datetime.datetime.now()
 iota_seed_length = 81
@@ -10,13 +12,8 @@ history_excempt = False
 def iota_seed_generator(seed_length=iota_seed_length):
     population = "ABCDEFGHIJKLMNOPQRSTUVWXYZ9"
     out_string = ""
-    def seed_gen():
-        for i in random.sample([1,2,3,4,5,6,7,8,9], 1):
-            random_seed = random.random() * i
-        return random_seed
-    random.seed(a=seed_gen())
     for x in range(seed_length):
-        out_string = out_string + random.choice(population)
+        out_string = out_string + secrets.choice(population)
     return out_string
 
 

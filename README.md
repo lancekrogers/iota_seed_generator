@@ -14,3 +14,8 @@ This will generate two files:
 2. .iota_history -- which is a log of the seeds you have created.
 
 Run python generate.py -h for the help menu.
+
+This script uses the secrets module that was introduced in Python 3.6, which uses a more cryptographically
+secure method of randomness which is provided by your operating system.  As such this must be used with
+Python versions >= 3.6   
+
